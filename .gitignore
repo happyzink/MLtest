@@ -1,0 +1,57 @@
+# Environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+service-account*.json
+
+# Python
+backend/.venv/
+__pycache__/
+*.pyc
+*.pyo
+backend/catboost_info/
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# Data & uploads
+backend/uploads/*
+!backend/uploads/.gitkeep
+backend/app/uploads/
+
+# Storage (models, experiments, datasets)
+backend/storage/
+*.joblib
+*.pkl
+*.pickle
+
+# Local delivery documents and acceptance evidence (not for GitHub)
+/.review/
+/QODER*.md
+/docs/HANDOFF.md
+/docs/IMPLEMENTATION_STATUS.md
+/docs/QODER*.md
+**/*交付报告*.md
+**/*验收*.md
+**/*检验*.md
+**/*清单*.md
+**/*任务书*.md
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
